@@ -1,0 +1,20 @@
+<div class="generic-page">
+  <div class="container">
+
+<div class="news-feed-container">
+  <h2>NOTIZIE - Femminicidi</h2>
+
+  <div class="search-bar">
+    <input [(ngModel)]="userKeyword" placeholder="Enter custom keyword" />
+    <button (click)="searchNews()">Search</button>
+  </div>
+
+  <div class="news-article" *ngFor="let article of newsArticles">
+    <h3>{{ article.title }}</h3>
+    <p>{{ article.description }}</p>
+    <p>Published on: {{ article.publishedAt | date:'medium' }}</p>
+    <a [href]="article.url" target="_blank">Read more</a>
+  </div>
+</div>
+</div>
+</div>

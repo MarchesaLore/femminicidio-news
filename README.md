@@ -1,6 +1,6 @@
 Project Description: L'Ultima
 
-<img width="527" alt="image" src="https://github.com/MarchesaLore/femminicidio-news/assets/22336407/48039ea0-5225-465f-bd9b-f4695d8fd4a0">
+<img width="666" alt="image" src="https://github.com/MarchesaLore/femminicidio-news/assets/22336407/f14b6cf7-e602-4fa3-a9b7-40860e7bdf74">
 
 
 Overview:
@@ -11,7 +11,7 @@ Key Features:
 
 Standard **menu** and mobile menu to easily navigate through essential sections of the site using intuitively placed quick links.
 
-<img width="118" alt="image" src="https://github.com/MarchesaLore/femminicidio-news/assets/22336407/bde27dc0-b302-4918-8768-d05f20912785">
+<img width="113" alt="image" src="https://github.com/MarchesaLore/femminicidio-news/assets/22336407/9cbc7a06-0b94-4cf8-a962-38619428f6d7">
 
 
 **Landing Page** 
@@ -22,14 +22,13 @@ with hero banner, engage visitors with a visually impactful hero banner.
 Informative Content: Explore a wealth of information on the causes, impact, and prevention of violence against women.
 Menu Navigation: A dedicated menu facilitates seamless navigation through different sections of the information page.
 
-<img width="353" alt="image" src="https://github.com/MarchesaLore/femminicidio-news/assets/22336407/4acffdfe-089b-47ca-abac-9015e2515e21">
+<img width="683" alt="image" src="https://github.com/MarchesaLore/femminicidio-news/assets/22336407/d73da5cd-2cc3-4f79-9a51-63821f23c910">
 
 
 **Resources Page**
 Contact Information: Find essential contact details for support organizations and helplines.
 
-
-<img width="353" alt="image" src="https://github.com/MarchesaLore/femminicidio-news/assets/22336407/4a6b102b-3b26-4f52-8a55-925e5f18db61">
+<img width="650" alt="image" src="https://github.com/MarchesaLore/femminicidio-news/assets/22336407/c8319de4-cadd-4e89-9b8e-016de74f325f">
 
 **News Feed**
 API Integration: Access a dynamic news feed sourced from a **developers-only** API, offering real-time updates on topics related to violence against women.
@@ -40,6 +39,8 @@ THIS ONLY WORKS LOCAL, I HAVE A DEVELOPER KEY FOR https://newsapi.org THAT ONLY 
 
 <img width="332" alt="image" src="https://github.com/MarchesaLore/femminicidio-news/assets/22336407/0028c8f0-3426-4285-ace6-119b2e05dd96">
 
+**LANGUAGE**
+Recently added the functionality that you switch between EN and IT
 
 Design Aesthetics:
 CSS Styling: The site boasts an aesthetically pleasing design with captivating CSS elements, creating an immersive and memorable user experience.

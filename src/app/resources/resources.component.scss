@@ -1,11 +1,61 @@
+
+$red: #BC2036;
+$yellow: #FBB64F;
+$charcoal: #2E5266;
+$gray: #6E8898;
+$gray2: #9FB1BC;
+
 .generic-page{
-    background-color: #2E5266;
-    padding-top: 80px;
-    color: #FBB64F;
+    background-color: $charcoal;
+    padding-top: 60px;
+    color: $yellow;
     min-height: 100vh;
 
     a{
-        color: #BC2036;
+        color: $red;
         padding: 5px;
+    }
+    p{
+        line-height: 2;
+        font-size: 16px;
+    }
+    h2{
+        font-size: 3rem;
+        text-transfrom: uppercase;
+        background: linear-gradient(to right, $red, $charcoal,  $red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-right: 30%;
+    }
+
+    .img-container{
+        aspect-ratio: 1;
+        @media (min-width: 900px) {
+            width: 60%;
+            position: fixed;
+            z-index: 1;
+            
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .container{
+        padding: 20px 50px;
+        z-index: 2;
+        position: relative;
+        background-color: $yellow;
+        color: $charcoal;
+        h2{
+            margin: 0;
+        }
+        @media (min-width: 900px) {
+            width: 40%;
+            margin-right: 10%;
+            margin-top: 5%;
+        }
     }
 }

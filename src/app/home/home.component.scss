@@ -1,13 +1,23 @@
+.main-content{
+    width:100%;
+    >div{
+        width: 100%;
+    }
+}
+
 
 .hero{
     min-height: calc(100vh + 20px);
     background-color: #2E5266;
-    padding-top: 80px;
+    padding-top: 60px;
     
     h3{
         background-image: url('../../assets/hero-bg.jpg');
         font-family: Arial, sans-serif;
         font-size: 5rem;
+        line-height: 4.4rem;
+        
+        font-weight: 900;
         margin: 0;
         padding: 30px;
         background-attachment: fixed;
@@ -15,13 +25,23 @@
         -webkit-background-clip: text;
         position: absolute;
         bottom: 0;
+        @media (max-width: 900px) {
+          font-size: 45px;
+          line-height: 55px;
+          
+        }
     }
 
 }
 
 .section{
     background-color: #BC2036;
-    padding: 100px;
+    >div{
+        padding: 100px;
+        @media (max-width: 900px) {
+            padding: 30px;          
+        }
+    }
     h2{
         color: #2E5266;
         text-transform: uppercase;

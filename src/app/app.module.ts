@@ -14,6 +14,9 @@ import { MenuComponent } from './menu/menu.component.spec';
 import { NewsFeedComponent } from './news-feed/news-feed.component';
 import { ReportingComponent } from './reporting/reporting.component';
 import { NewsService } from './news.service'; 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 
 @NgModule({
   declarations: [
@@ -30,6 +33,7 @@ import { NewsService } from './news.service';
     HttpClientModule,
     FormsModule, 
     AppRoutingModule, 
+    BrowserAnimationsModule
   ],
   providers: [NewsService],
   bootstrap: [AppComponent],

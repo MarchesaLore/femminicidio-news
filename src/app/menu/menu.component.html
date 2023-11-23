@@ -1,10 +1,32 @@
 <nav>
     <div class='container'>
       <h2><a class='nav-link' routerLinkActive='active' routerLink='/'>L'ultima</a></h2>
-      <ul class='nav'>
-        <li><a class='nav-link' routerLinkActive='active' routerLink='/information'>INFO</a></li>
-        <li><a class='nav-link' routerLinkActive='active' routerLink='/resources'>RISORSE</a></li>
-        <li><a class='nav-link' routerLinkActive='active' routerLink='/news-feed'>NOTIZIE</a></li>
-      </ul>
+      <div class="mobile-only">
+          <button class="mobile-menu-icon" (click)="showhideMenu()" [class.open]="isMenuVisible">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 menu-icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>   
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 close-icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+                
+          </button>   
+          <div class="mobile-menu-bg" [class.active]="isMenuVisible" (click)="showhideMenu()"></div>
+        <div class="mobile-menu" [class.active]="isMenuVisible">
+          <ul class='nav'>
+            <li><a class='nav-link' routerLinkActive='active' routerLink='/' (click)="showhideMenu()">HOME</a></li>
+            <li><a class='nav-link' routerLinkActive='active' routerLink='/information' (click)="showhideMenu()">INFO</a></li>
+            <li><a class='nav-link' routerLinkActive='active' routerLink='/resources' (click)="showhideMenu()">RISORSE</a></li>
+            <li><a class='nav-link' routerLinkActive='active' routerLink='/news-feed' (click)="showhideMenu()">NOTIZIE</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="desktop-only">
+        <ul class='nav'>
+          <li><a class='nav-link' routerLinkActive='active' routerLink='/information'>INFO</a></li>
+          <li><a class='nav-link' routerLinkActive='active' routerLink='/resources'>RISORSE</a></li>
+          <li><a class='nav-link' routerLinkActive='active' routerLink='/news-feed'>NOTIZIE</a></li>
+        </ul>
+      </div>
     </div>
   </nav>

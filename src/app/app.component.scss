@@ -1,3 +1,22 @@
 .main-content{
     margin-left: 400px;
 }
+footer{
+    background-color: #FBB64F;
+    color: #2E5266;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 99;
+    >div{
+        padding: 20px;
+        &:nth-child(2){
+            text-align: right;
+        }
+    }
+    z-index: 9;
+    position: relative;
+}
+.main{
+    overflow: hidden;
+}

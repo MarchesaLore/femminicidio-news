@@ -12,6 +12,7 @@ $gray2: #9FB1BC;
     color: $yellow;
     font-family: "Archivo", serif;
     position: relative;
+    min-height: calc(100vh - 57px);
     p{
         line-height: 2;
         font-size: 16px;

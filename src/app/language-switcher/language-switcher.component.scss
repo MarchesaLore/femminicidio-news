@@ -1,0 +1,18 @@
+.language-container{
+  color: #FBB64F;
+  button{
+    color: #FBB64F;
+    background-color: transparent;
+    padding: 0 5px;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid #FBB64F;
+    font-weight: bold;
+    &.active {
+      background-color: #FBB64F;
+      color: #2E5266;
+    }
+  }
+}
+  
+  

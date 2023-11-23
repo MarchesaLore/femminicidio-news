@@ -23,9 +23,10 @@
       </div>
       <div class="desktop-only">
         <ul class='nav'>
-          <li><a class='nav-link' routerLinkActive='active' routerLink='/information'>INFO</a></li>
-          <li><a class='nav-link' routerLinkActive='active' routerLink='/resources'>RISORSE</a></li>
-          <li><a class='nav-link' routerLinkActive='active' routerLink='/news-feed'>NOTIZIE</a></li>
+          <li><a class='nav-link' routerLinkActive='active' routerLink='/information'>{{ 'menu.info' | translate }}</a></li>
+          <li><a class='nav-link' routerLinkActive='active' routerLink='/resources'>{{ 'menu.resource' | translate }}</a></li>
+          <li><a class='nav-link' routerLinkActive='active' routerLink='/news-feed'>{{ 'menu.news' | translate }}</a></li>
+          <li><app-language-switcher></app-language-switcher></li>
         </ul>
       </div>
     </div>

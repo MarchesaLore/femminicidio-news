@@ -19,7 +19,7 @@ $gray2: #9FB1BC;
     }
     h2{
         font-size: 3rem;
-        text-transfrom: uppercase;
+        //text-transfrom: uppercase;
         background: linear-gradient(to right, #BC2036, #FBB64F,  #BC2036);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -137,16 +137,11 @@ $gray2: #9FB1BC;
                 }
 
             }
-            &.end{
-                text-align: right;
-                p{
-                    margin-right: 0;
-                }
                 a{
-                    color: $yellow;
+                    color: $red;
 
                 }
-            }
+            
         }
         h2{
             font-size: 100px;

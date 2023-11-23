@@ -24,7 +24,6 @@ export class NewsFeedComponent implements OnInit {
       if (this.userKeyword) {
         const response = await this.newsService.getNewsWkeywords([this.userKeyword]);
         this.newsArticles = response.articles;
-        console.log(this.newsArticles);
       } else {
         const response = await this.newsService.getNewsWkeywords(this.predeterminedKW);
         this.newsArticles = response.articles;

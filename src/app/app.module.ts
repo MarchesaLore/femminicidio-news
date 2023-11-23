@@ -15,6 +15,10 @@ import { NewsFeedComponent } from './news-feed/news-feed.component';
 import { ReportingComponent } from './reporting/reporting.component';
 import { NewsService } from './news.service'; 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LanguageSwitcherComponent } from './language-switcher/language-switcher.component'; 
+import { LanguageService } from './language.service'; 
+import { TranslatePipe } from './pipes/translate.pipe';
+
 
 
 
@@ -26,7 +30,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MenuComponent,
     NewsFeedComponent,
     ReportingComponent,
-    ResourcesComponent
+    ResourcesComponent,
+    LanguageSwitcherComponent,
+    TranslatePipe
   ],
   imports: [
     BrowserModule,
@@ -35,7 +41,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule, 
     BrowserAnimationsModule
   ],
-  providers: [NewsService],
+  providers: [NewsService, LanguageService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

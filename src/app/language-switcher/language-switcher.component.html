@@ -1,0 +1,10 @@
+<!-- <div class="language-container">
+  <select [(ngModel)]="selectedLanguage" (change)="changeLanguage(selectedLanguage)">
+    <option value="en">EN</option>
+    <option value="it">IT</option>
+  </select>
+</div> -->
+<div class="language-container">
+  <button (click)="changeLanguage('en')" [class.active]="selectedLanguage === 'en'">EN</button>
+  <button (click)="changeLanguage('it')" [class.active]="selectedLanguage === 'it'">IT</button>
+</div>

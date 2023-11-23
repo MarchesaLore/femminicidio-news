@@ -24,12 +24,10 @@
         position: absolute;
         bottom: 0;
 
-        font-size: 6rem;
-        line-height: 7rem;
-        @media (max-width: 1300px) {
-            font-size: 5rem;
-            line-height: 6rem;
-        }
+        padding: 20px 5%;
+        font-size: 5rem;
+        line-height: 6rem;
+        padding: 30px;
         @media (max-width: 1100px) {
             font-size: 4rem;
             line-height: 5srem;
@@ -59,6 +57,7 @@
         padding: 10px 20px;
         border-radius: 20px;
         background-color: #2E5266;
+        text-transform: uppercase;
         color: #BC2036;
         font-weight: 600;
         text-decoration: none;

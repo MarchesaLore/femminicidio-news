@@ -14,8 +14,6 @@
     h3{
         background-image: url('../../assets/hero-bg.jpg');
         font-family: Arial, sans-serif;
-        font-size: 5rem;
-        line-height: 4.4rem;
         
         font-weight: 900;
         margin: 0;
@@ -25,9 +23,20 @@
         -webkit-background-clip: text;
         position: absolute;
         bottom: 0;
+
+        font-size: 6rem;
+        line-height: 7rem;
+        @media (max-width: 1300px) {
+            font-size: 5rem;
+            line-height: 6rem;
+        }
+        @media (max-width: 1100px) {
+            font-size: 4rem;
+            line-height: 5srem;
+        }
         @media (max-width: 900px) {
           font-size: 45px;
-          line-height: 55px;
+          line-height: 60px;
           
         }
     }

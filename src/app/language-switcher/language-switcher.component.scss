@@ -13,6 +13,22 @@
       color: #2E5266;
     }
   }
+  @media (max-width: 900px) {
+    color: #2E5266;
+    padding: 10px 20px;
+    button{
+      padding: 10px;
+      color: #2E5266;
+        font-weight: thin;
+        border-color: #2E5266;
+        &.active{
+          font-weight: bold;
+          background-color: #2E5266;
+          color: #FBB64F;
+        }
+    }
+    
+  }
 }
   
   

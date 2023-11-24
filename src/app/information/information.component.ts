@@ -20,12 +20,12 @@ export class InformationComponent {
     this.checkActiveSection();
   }
   checkActiveSection() {
+    //console.log('checkActiveSection');
     const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-
     // Loop through section ids
     this.sectionIds.forEach(sectionId => {
       const section = document.getElementById(sectionId);
-
+  
       if (this.isElementInViewport(section!)) {
         // Add 'active' class to the corresponding menu item
         const menuItem = document.querySelector(`.page-sub-menu ul li a[fragment=${sectionId}]`);

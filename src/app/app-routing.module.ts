@@ -2,8 +2,7 @@
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { HomeComponent } from './home/home.component'; // Replace with your actual components
+import { HomeComponent } from './home/home.component'; 
 import { InformationComponent } from './information/information.component';
 import { ReportingComponent } from './reporting/reporting.component';
 import { ResourcesComponent } from './resources/resources.component';

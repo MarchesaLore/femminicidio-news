@@ -2,7 +2,6 @@
 
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -28,7 +27,7 @@ export class NewsService {
       return response;
     } catch (error) {
       console.error('Error fetching news:', error);
-      throw error; // Re-throw the error to be caught by the caller
+      throw error;
     }
   }
 
@@ -41,7 +40,7 @@ export class NewsService {
       return response;
     } catch (error) {
       console.error('Error fetching news:', error);
-      throw error; // Re-throw the error to be caught by the caller
+      throw error; 
     }
   }
 }

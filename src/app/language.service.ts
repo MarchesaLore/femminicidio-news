@@ -11,11 +11,12 @@ export class LanguageService {
   constructor() {
     // Set the default language to English
     this.currentLanguageSubject = new BehaviorSubject<string>('en');
+    //assign an observable to language
     this.currentLanguage = this.currentLanguageSubject.asObservable();
   }
 
   changeLanguage(language: string): void {
-    // You can add logic here to load language-specific files if needed
+    // updates the current value and notifies all subscribers about the change
     this.currentLanguageSubject.next(language);
   }
 

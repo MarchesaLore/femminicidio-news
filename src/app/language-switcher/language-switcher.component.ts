@@ -8,7 +8,6 @@ import { LanguageService } from '../language.service';
 })
 export class LanguageSwitcherComponent {
   selectedLanguage: string = 'en'; // Default language
-
   constructor(private languageService: LanguageService) {}
 
   changeLanguage(language: string): void {

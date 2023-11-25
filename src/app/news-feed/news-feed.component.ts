@@ -21,10 +21,12 @@ export class NewsFeedComponent implements OnInit {
 
   async fetchNews(): Promise<void> {
     try {
+      //user keyword
       if (this.userKeyword) {
         const response = await this.newsService.getNewsWkeywords([this.userKeyword]);
         this.newsArticles = response.articles;
       } else {
+        //if user is not searching specific words then use the filter for predermided keys
         const response = await this.newsService.getNewsWkeywords(this.predeterminedKW);
         this.newsArticles = response.articles;
       }

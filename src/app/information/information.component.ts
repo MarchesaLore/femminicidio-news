@@ -10,15 +10,19 @@ export class InformationComponent {
   sectionIds = ['introduzione', 'cause', 'contesto', 'etimologia', 'impatto', 'significato', 'sfide', 'uso'];
 
   constructor(private el: ElementRef) { }
+
   ngOnInit() {
     // Initial check for active section
     this.checkActiveSection();
   }
+
   @HostListener('window:scroll', ['$event'])
   onScroll() {
-    // Check for active section on scroll
+    // Check for active section on scroll for submenu
     this.checkActiveSection();
   }
+
+  //adding the dot in front of the sub menu item
   checkActiveSection() {
     //console.log('checkActiveSection');
     const scrollPosition = window.scrollY || document.documentElement.scrollTop;
@@ -45,6 +49,7 @@ export class InformationComponent {
       }
     });
   }
+  //check if element is visible in the window
   isElementInViewport(el: HTMLElement): boolean {
     const rect = el.getBoundingClientRect();
     return (
@@ -55,6 +60,7 @@ export class InformationComponent {
     );
   }
 
+  //on click scroll to section for submenu for this page 
   public navigateToSection(section: string) {
     window.location.hash = '';
     window.location.hash = section;

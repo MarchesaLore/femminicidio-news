@@ -14,7 +14,7 @@ const translations: { [key: string]: Translations } = {
 
 @Pipe({
   name: 'translate',
-  pure: false // Mark the pipe as not pure
+  pure: false 
 })
 export class TranslatePipe implements PipeTransform {
   constructor(private languageService: LanguageService) {}

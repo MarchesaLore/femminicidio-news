@@ -1,0 +1,15 @@
+ <!-- You can now use your library component in app.component.html -->
+ <ngx-slick-carousel class="carousel" 
+ #slickModal="slick-carousel" 
+ [config]="slideConfig">
+@for (slide of slides; track slide.img) {
+<div ngxSlickItem class="slide">
+    <div class="text-container" [ngClass]="{'no-img': slide.image == ''}">
+        <span class="name">{{ slide?.name }}</span>
+        <span class="location">{{ slide?.location }}</span>
+        <span class="date">{{ slide?.date }}</span>
+    </div>
+    <img *ngIf="slide.image !==''" [src]="slide?.image" alt="" width="100%">
+</div>
+}
+</ngx-slick-carousel>

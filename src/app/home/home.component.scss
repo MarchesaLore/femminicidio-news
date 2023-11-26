@@ -7,10 +7,9 @@
 
 
 .hero{
-    min-height: calc(100vh + 20px);
+    height: calc(100vh - 180px);
     background-color: #2E5266;
     overflow: hidden;
-    height: 100vh;
     padding-top: 60px;
     h1{
         background-image: url('../../assets/hero-bg.jpg');
@@ -33,30 +32,29 @@
     }
 
 }
-.section{
-    background-color: #BC2036;
+.section{ 
     >div{
         padding: 100px;
         @media (max-width: 900px) {
-            padding: 30px;          
+            padding: 40px 30px;          
         }
     }
     h2{
-        color: #2E5266;
         text-transform: uppercase;
     }
     .button{
         padding: 10px 20px;
         border-radius: 20px;
-        background-color: #2E5266;
         text-transform: uppercase;
-        color: #BC2036;
         font-weight: 600;
         text-decoration: none;
         font-family: "Archivo Black", serif;
     }
-    &:nth-child(2){
+    
+    &.red{
+        background-color: #BC2036;
         h2{
+            color: #2E5266;
             font-size: 3rem;
             @media (max-width: 900px){
                 font-size: 30px; 
@@ -64,8 +62,13 @@
             }
             margin: 0;
         }
+        .button{
+            background-color: #2E5266;
+            color: #BC2036;
+        }
     }
-    &:nth-child(3){
+
+    &.yellow{
         background-color: #FBB64F;
         text-align: left;
         h2{
@@ -78,7 +81,7 @@
         }
 
     }
-    &:last-child{
+    &.green{
         background-color: #2E5266;
         text-align: right;
         h2{
@@ -90,6 +93,20 @@
             color: #2E5266;
             text-align: right;
         }
+    }
+}
 
+.slider-container{
+    position: relative;
+    >div{
+        position: absolute;
+        bottom: -20px;
+        right: 20px;
+        color: #2E5266;
+        text-align: right;
+        a{
+            color: #2E5266;
+            
+        }
     }
 }

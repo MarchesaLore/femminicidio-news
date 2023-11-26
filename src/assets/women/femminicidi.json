@@ -1,0 +1,114 @@
+[
+    {
+        "name": "Giulia Cecchettin",
+        "age" : "22",
+        "location" : "Barcis",
+        "date" : "2023-11-118",
+        "image" : "cecchettin.jpg"
+    },
+    {
+        "name": "Michele Faiers Dawn",
+        "age" : "",
+        "location" : "Casoli",
+        "date" : "2023-11-01",
+        "image" : "dawn.jpg"
+    },
+    {
+        "name": "Etleva Kanolja",
+        "age" : "",
+        "location" : "Savona",
+        "date" : "2023-10-29",
+        "image" : "Kanolja.jpg"
+    },
+    {
+        "name": "Annalisa D'Auria",
+        "age" : "",
+        "location" : "Rivoli",
+        "date" : "2023-10-28",
+        "image" : "Auria.jpg"
+    },
+    {
+        "name": "Concetta Marruocco",
+        "age" : "",
+        "location" : "Cerreto d'Esi",
+        "date" : "2023-10-14",
+        "image" : "Marruocco.jpg"
+    },
+    {
+        "name": "Klodiana Vefa",
+        "age" : "",
+        "location" : "Castelfiorentino",
+        "date" : "2023-09-28",
+        "image" : "Vefa.jpg"
+    },
+    {
+        "name": "Anna Elisa Fontana",
+        "age" : "",
+        "location" : "Palermo",
+        "date" : "2023-09-25",
+        "image" : "Fontana.jpg"
+    },
+    {
+        "name": "Liliana Cojita",
+        "age" : "",
+        "location" : "Tombolo",
+        "date" : "2023-09-21",
+        "image" : ""
+    },
+    {
+        "name": "Maria Rosa Troisi",
+        "age" : "",
+        "location" : "Battipaglia",
+        "date" : "2023-09-20",
+        "image" : "Troisi.jpg"
+    },
+    {
+        "name": "Marisa Leo",
+        "age" : "",
+        "location" : "Marsala",
+        "date" : "2023-09-06",
+        "image" : "leo.jpg"
+    },
+    {
+        "name": "Rossella Nappini",
+        "age" : "",
+        "location" : "Roma",
+        "date" : "2023-09-04",
+        "image" : "nappini.jpg"
+    },
+    {
+        "name": "Vera Schiopu",
+        "age" : "",
+        "location" : "Ramacca",
+        "date" : "2023-08-19",
+        "image" : "Schiopu.jpg"
+    },
+    {
+        "name": "Anna Scala",
+        "age" : "",
+        "location" : "Piano di Sorrento",
+        "date" : "2023-08-17",
+        "image" : "Scala.jpg"
+    },
+    {
+        "name": "Celine Frei Matzohl",
+        "age" : "",
+        "location" : "Silandro",
+        "date" : "2023-08-13",
+        "image" : "Matzohl.jpg"
+    },
+    {
+        "name": "Sofia Castelli",
+        "age" : "",
+        "location" : "Cologno Monzese",
+        "date" : "2023-07-29",
+        "image" : "Castelli.jpg"
+    },
+    {
+        "name": "Angela Gioiello",
+        "age" : "",
+        "location" : "Monterusciello di Pozzuoli",
+        "date" : "2023-07-28",
+        "image" : ""
+    }
+]

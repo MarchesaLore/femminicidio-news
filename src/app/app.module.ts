@@ -18,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LanguageSwitcherComponent } from './language-switcher/language-switcher.component'; 
 import { LanguageService } from './language.service'; 
 import { TranslatePipe } from './pipes/translate.pipe';
+import { UltimaSliderComponent } from './ultima-slider/ultima-slider.component';
 
 
 
@@ -39,7 +40,8 @@ import { TranslatePipe } from './pipes/translate.pipe';
     HttpClientModule,
     FormsModule, 
     AppRoutingModule, 
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    UltimaSliderComponent
   ],
   providers: [NewsService, LanguageService],
   bootstrap: [AppComponent],

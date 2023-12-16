@@ -9,7 +9,8 @@ import { NewsFeedComponent } from './news-feed/news-feed.component';
 import { NewInfoComponent } from './info/info.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'welcome', component: HomeComponent },
+  { path: '', redirectTo: '/welcome', pathMatch: 'full' },
   { path: 'information', component: NewInfoComponent },
   { path: 'reporting', component: ReportingComponent },
   { path: 'resources', component: ResourcesComponent },

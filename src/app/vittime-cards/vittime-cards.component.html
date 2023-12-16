@@ -1,0 +1,10 @@
+<div *ngFor="let card of cards">    
+    <div class="card">
+        <div class="text-container" [ngClass]="{'no-img': card.image == ''}">
+            <span class="name">{{ card?.name }}</span>
+            <span class="location">{{ card?.location }}</span>
+            <span class="date">{{ card?.date }}</span>
+        </div>
+        <img *ngIf="card.image !==''" [src]="card?.image" alt="" width="100%">
+    </div>
+</div>

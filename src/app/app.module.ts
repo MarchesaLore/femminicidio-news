@@ -21,33 +21,35 @@ import { UltimaSliderComponent } from './ultima-slider/ultima-slider.component';
 import { NewInfoComponent } from './info/info.component';
 import { InfoMenuComponent } from './info/info.menu.component';
 import { SectionComponent } from './info/section.component';
+import { VittimeCardsComponent } from "./vittime-cards/vittime-cards.component";
 
 
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    InfoMenuComponent,
-    SectionComponent,
-    NewInfoComponent,
-    MenuComponent,
-    NewsFeedComponent,
-    ReportingComponent,
-    ResourcesComponent,
-    LanguageSwitcherComponent,
-    TranslatePipe
-  ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    FormsModule, 
-    AppRoutingModule, 
-    BrowserAnimationsModule,
-    UltimaSliderComponent
-  ],
-  providers: [NewsService, LanguageService],
-  bootstrap: [AppComponent],
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        InfoMenuComponent,
+        SectionComponent,
+        NewInfoComponent,
+        MenuComponent,
+        NewsFeedComponent,
+        ReportingComponent,
+        ResourcesComponent,
+        LanguageSwitcherComponent,
+        TranslatePipe
+    ],
+    providers: [NewsService, LanguageService],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        FormsModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        UltimaSliderComponent,
+        VittimeCardsComponent
+    ]
 })
 export class AppModule {}

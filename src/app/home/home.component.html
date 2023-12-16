@@ -1,19 +1,7 @@
 <div class="main-content">
     <div class="hero">
-        <h1>L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA</h1>
-        <h1>L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA</h1>
-        <h1>L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA</h1>
-        <h1>L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA</h1>
-        <h1>L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA</h1>
-        <h1>L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA</h1>
-        <h1>L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA</h1>
-        <h1>L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA  L'ULTIMA</h1>
-    </div>
-    <div class="slider-container">
-        <div>
-            source: <a href="https://femminicidioitalia.info/lista/2023" target="_blank">femminicidioitalia</a>
-        </div>
-        <app-ultima-slider></app-ultima-slider>
+        <h1>ULTIMA</h1>
+        <app-vittime-cards class="vittime"></app-vittime-cards>        
     </div>
     <div class="section red">
         <div class="container">
@@ -34,5 +22,11 @@
             <h2>{{ 'home.news' | translate }}</h2>
             <a class='button' routerLinkActive='active' routerLink='/news-feed'>{{ 'menu.news' | translate }}</a>
         </div>
+    </div>
+    <div class="slider-container">
+        <div>
+            source: <a href="https://femminicidioitalia.info/lista/2023" target="_blank">femminicidioitalia</a>
+        </div>
+        <app-ultima-slider></app-ultima-slider>
     </div>
 </div>

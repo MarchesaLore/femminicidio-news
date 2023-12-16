@@ -1,0 +1,24 @@
+<div class="generic-page">
+  
+  <info-menu [currentSection]="currentSection" [maxSections]="maxSections"></info-menu>
+
+
+  <div *ngFor="let i of generateSectionIds(maxSections); let index = index" 
+    [attr.id]="'section' + (index+1)">
+    <app-section [sectionTitle]="'info.' + (index+1) + '.title' | translate" 
+    [sectionContent]="'info.' + (index+1) + '.desc' | translate" [sectionNumber]='(index+1)'></app-section>
+  </div>
+
+  <div class="section oblique end">
+    <div class="container">
+        <p>
+            In conclusione, femmicidio e femminicidio sono concetti che mettono in luce la grave problematica della violenza 
+            di genere contro le donne. Mentre le implicazioni possono variare, entrambi i termini contribuiscono al dibattito 
+            globale sulla parità di genere e alla necessità di affrontare in modo completo la violenza contro le donne.
+        <br/>
+            FONTE: <a href="https://unipd-centrodirittiumani.it/it/schede/I-concetti-di-femmicidio-e-femminicidio/368">UNIPD - Centro di Ateneo per i Diritti Umani</a>
+        </p>
+    </div>
+</div>
+</div>
+

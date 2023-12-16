@@ -1,0 +1,12 @@
+<nav class="page-sub-menu desktop-only">
+  <div class="container">
+    <ul>
+      <li *ngFor="let i of getRange(maxSections); let sectionIndex = index" [class.active]="currentSection === 'section' + (sectionIndex)">
+        <div class="circle"></div>
+        <a (click)="navigateToSection('section' + (sectionIndex + 1))">
+          0{{(sectionIndex + 1)}} {{ 'info.' + (sectionIndex + 1) | translate }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

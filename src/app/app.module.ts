@@ -9,7 +9,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ResourcesComponent } from './resources/resources.component';
-import { InformationComponent } from './information/information.component';
 import { MenuComponent } from './menu/menu.component.spec';
 import { NewsFeedComponent } from './news-feed/news-feed.component';
 import { ReportingComponent } from './reporting/reporting.component';
@@ -19,6 +18,9 @@ import { LanguageSwitcherComponent } from './language-switcher/language-switcher
 import { LanguageService } from './language.service'; 
 import { TranslatePipe } from './pipes/translate.pipe';
 import { UltimaSliderComponent } from './ultima-slider/ultima-slider.component';
+import { NewInfoComponent } from './info/info.component';
+import { InfoMenuComponent } from './info/info.menu.component';
+import { SectionComponent } from './info/section.component';
 
 
 
@@ -27,7 +29,9 @@ import { UltimaSliderComponent } from './ultima-slider/ultima-slider.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    InformationComponent,
+    InfoMenuComponent,
+    SectionComponent,
+    NewInfoComponent,
     MenuComponent,
     NewsFeedComponent,
     ReportingComponent,

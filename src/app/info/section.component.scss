@@ -5,74 +5,17 @@ $charcoal: #2E5266;
 $gray: #6E8898;
 $gray2: #9FB1BC;
 
-.generic-page{
-    scroll-behavior: smooth;
-    background-color: $charcoal;
-    padding-top: 110px;
-    color: $yellow;
-    font-family: "Archivo", serif;
-    position: relative;
-    min-height: calc(100vh - 57px);
-    p{
-        line-height: 2;
-        font-size: 16px;
-    }
-    h2{
-        font-size: 3rem;
-        //text-transfrom: uppercase;
-        background: linear-gradient(to right, #BC2036, #FBB64F,  #BC2036);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-right: 30%;
-        @media (max-width: 900px) {
-            margin: 0;
-            
-        }
-    }
-
-
-    .img-section{
-        aspect-ratio: 3  / 1;
-        overflow: hidden;
-        width: 100%;
-        position: relative;
-        z-index: 13;
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-        
-    -webkit-transform-origin:100% 100%;
-    -ms-transform-origin:100% 100%;
-    transform-origin:100% 100%;
-
-    -webkit-transform:skewY(-2deg);
-    -ms-transform:skewY(-2deg);
-    transform:skewY(-2deg);
-    margin-top: -80px;
-
-    }
     .section{
-        @media (max-width: 900px) {
-            h2{
-                padding: 15px;
-            }
-        }
-        padding-bottom: 100px;
+        margin-top: -100px;
         >.container{
             position: relative;
+            padding: 150px 0 250px;
         }
         &.oblique{
             position: relative;
-            padding-bottom: 0;
             background-color: $charcoal;
             :nth-child(1){            
-                z-index: 12;                
-                margin-top: -50px;
-                
-                padding: 50px;
+                z-index: 12;       
                 @media (max-width: 900px) {
                     h2{
                         padding: 15px;
@@ -112,10 +55,9 @@ $gray2: #9FB1BC;
             -webkit-transform:skewY(-2deg);
             -ms-transform:skewY(-2deg);
             transform:skewY(-2deg);
-            padding: 80px 0 40px;
-            margin: -80px 0;
+
+
             >.container{
-                padding-top: 100px;
                 -webkit-transform:skewY(+2deg);
                 -ms-transform:skewY(+2deg);
                 transform:skewY(+2deg);
@@ -139,7 +81,6 @@ $gray2: #9FB1BC;
             }
                 a{
                     color: $red;
-
                 }
             
         }
@@ -150,7 +91,7 @@ $gray2: #9FB1BC;
             position: absolute;
             z-index: 0;
             right: 0;
-            bottom: 10%;
+            top: 40%;
         }
         h3{
             font-size: 2rem;
@@ -174,47 +115,3 @@ $gray2: #9FB1BC;
             }
         }
     }
-}
-.desktop-only{
-    display: none;
-    @media (min-width: 900px) {
-        display: block;       
-    }
-}
-.page-sub-menu{
-    background-color: $charcoal;
-    position: fixed;
-    top: 60px;
-    z-index: 99;
-    ul{
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        padding: 15px 0;
-        li{
-            display: flex;
-            a{
-                padding: 15px;
-                color: $yellow;
-            }
-
-            .circle{
-                position: absolute;
-                background-color: $yellow;
-                border-radius: 50%;
-                width: 10px;
-                height: 10px;
-                margin: 17px 0;
-                display: none;
-
-            }
-            &.active{
-                .circle{
-                    display: block;
-                }
-            }
-        }
-    }
-}
-

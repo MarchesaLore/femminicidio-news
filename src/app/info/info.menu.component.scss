@@ -1,0 +1,43 @@
+
+$red: #BC2036;
+$yellow: #FBB64F;
+$charcoal: #2E5266;
+$gray: #6E8898;
+$gray2: #9FB1BC;
+.page-sub-menu{
+  background-color: $charcoal;
+  position: fixed;
+  top: 60px;
+  z-index: 99;
+  width: 100%;
+  ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      padding: 15px 0;
+      li{
+          display: flex;
+          a{
+              padding: 15px;
+              color: $yellow;
+          }
+
+          .circle{
+              position: absolute;
+              background-color: $yellow;
+              border-radius: 50%;
+              width: 10px;
+              height: 10px;
+              margin: 17px 0;
+              display: none;
+
+          }
+          &.active{
+              .circle{
+                  display: block;
+              }
+          }
+      }
+  }
+}

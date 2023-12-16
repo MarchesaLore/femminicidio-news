@@ -51,3 +51,13 @@ EmpowerHer is not just a website; it's a movement. By leveraging technology, we 
 
 Join Us:
 Become a part of the EmpowerHer initiative. Together, let's raise our voices, break the silence, and work towards a future free from violence against women.
+
+
+**UPDATE**
+
+New slider in the homepage (SLICK SLIDER)
+with the list of feminicides from this source: https://femminicidioitalia.info/lista/2023
+the slider info come from a json in assets folder.
+
+<img width="942" alt="image" src="https://github.com/MarchesaLore/femminicidio-news/assets/22336407/b3dab61f-bf89-4dad-91fc-3d7dcb9573f4">
+

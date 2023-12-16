@@ -5,6 +5,9 @@ $charcoal: #2E5266;
 $gray: #6E8898;
 $gray2: #9FB1BC;
 .page-sub-menu{
+    @media (max-width: 900px) {
+        display: none;
+    }
   background-color: $charcoal;
   position: fixed;
   top: 42px;

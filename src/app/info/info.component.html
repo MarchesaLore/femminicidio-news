@@ -2,7 +2,9 @@
   
   <info-menu [currentSection]="currentSection" [maxSections]="maxSections"></info-menu>
 
-
+  <div class="img-section">
+    <img src="assets/hero-bg.jpg" alt="info">  
+  </div>
   <div *ngFor="let i of generateSectionIds(maxSections); let index = index" 
     [attr.id]="'section' + (index+1)">
     <app-section [sectionTitle]="'info.' + (index+1) + '.title' | translate" 
